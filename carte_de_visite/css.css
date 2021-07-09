@@ -1,0 +1,126 @@
+/*----defautl-----*/
+ul {
+    list-style:none ;
+    font-family: "Candara";
+    width: 100%;
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+}   
+img{
+    border:none; 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h1{
+    font-family: "Candara Light";
+    text-align: center;
+}
+p{
+    font-family: "Candara";
+}
+
+
+
+#front {
+    display: flex;
+    width: 800px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+    margin: 0 auto;
+}
+.block_left, .block_right{
+    padding: 30px 20px;
+}
+.block_right{
+    background-color: #e8e8e8;
+    border-left:#046605  15px solid ;
+    flex:0.7;
+}
+ul li::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius:50% ;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+}
+ul li{
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 50px;
+    height: 40px;
+}
+ul li:nth-child(1)::before{
+    background-image: url(icones/profil.png);
+    background-color: #046605 ;
+}
+ul li:nth-child(1){
+    border-bottom: 3px solid green;
+    padding-bottom: 15px;
+}
+ul li:nth-child(2)::before{
+    background-image: url(icones/phone.png);
+    background-color: #383838;
+}
+ul li:nth-child(3)::before{
+    background-image: url(icones/fb.png);
+    background-color: #046605 ;
+}
+ul li:nth-child(4)::before{
+    background-image: url(icones/mail.png);
+    background-color: #383838;
+}
+ul li:nth-child(5)::before{
+    background-image: url(icones/address.png);
+    background-color: #046605 ;
+}
+.block_left{
+    border-left: #046605  20px solid;
+    flex: 1;
+}
+#nom i{
+    font-size:12px;
+}
+.block_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50% 0px 0px 50%;
+}
+
+.block_right .logo{
+    width: 100px;
+}
+.block_right span{
+    font-size: 30px;
+    color: white;
+    font-family: "Candara";
+}
+ul li p{
+    padding: 10px 0px;
+    margin:0;
+}
+.block_right p{
+    text-align: center;
+    font-weight: 600;
+}
+.block_right span{
+    background-image: url(icones/green_address.png);
+    background-size: 25px;
+    font-size: 14px;
+    font-family: "Candara";
+    color: #000;
+    background-repeat: no-repeat;
+    padding: 10px 0px 10px 30px;
+    background-position-y: 50%;
+
+}
